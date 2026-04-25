@@ -8,3 +8,4 @@ def func_12(): return 12
 def func_15(): return 15
 def func_20(): return 20
 def func_21(): return 21
+def func_23(): return 23

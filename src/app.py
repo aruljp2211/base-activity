@@ -21,3 +21,4 @@ def func_42(): return 42
 def func_51(): return 51
 def func_52(): return 52
 def func_54(): return 54
+def func_62(): return 62

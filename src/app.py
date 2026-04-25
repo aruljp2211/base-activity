@@ -35,3 +35,4 @@ def func_88(): return 88
 def func_91(): return 91
 def func_92(): return 92
 def func_93(): return 93
+def func_96(): return 96

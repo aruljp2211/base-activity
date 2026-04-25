@@ -6,3 +6,4 @@ def func_4(): return 4
 def func_6(): return 6
 def func_12(): return 12
 def func_15(): return 15
+def func_20(): return 20

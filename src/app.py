@@ -14,3 +14,4 @@ def func_27(): return 27
 def func_28(): return 28
 def func_30(): return 30
 def func_34(): return 34
+def func_35(): return 35

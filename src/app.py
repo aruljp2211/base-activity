@@ -2,3 +2,4 @@
 "def func(): return $(date +%s)" 
 def func_1(): return 1
 def func_3(): return 3
+def func_4(): return 4

@@ -7,3 +7,4 @@ def func_6(): return 6
 def func_12(): return 12
 def func_15(): return 15
 def func_20(): return 20
+def func_21(): return 21

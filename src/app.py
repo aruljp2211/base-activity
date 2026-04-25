@@ -12,3 +12,4 @@ def func_23(): return 23
 def func_26(): return 26
 def func_27(): return 27
 def func_28(): return 28
+def func_30(): return 30

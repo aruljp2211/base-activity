@@ -6,6 +6,18 @@
     body { font-family: Arial; padding:20px; background:#0f172a; color:white;}
     input, button { padding:10px; margin:5px;}
     pre { background:#1e293b; padding:10px;}
+/* 🔥 TAMBAHAN BARU */
+  .tx {
+    background: #1e293b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+
+  .hash { color: #38bdf8; }
+  .from { color: #facc15; }
+  .to { color: #4ade80; }
+  .value { color: #f472b6; }
   </style>
 </head>
 <body>
@@ -15,7 +27,7 @@
 <input id="address" placeholder="Enter wallet address">
 <button onclick="getTx()">Check</button>
 
-<pre id="result">🚀 Ready to check wallet...</pre>
+<div id="result">🚀 Ready to check wallet...</div>
 
 <script src="script.js"></script>
 

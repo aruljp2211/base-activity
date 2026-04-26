@@ -2,7 +2,8 @@ async function getTx() {
   const address = document.getElementById("address").value;
   const result = document.getElementById("result");
 
-  result.innerText = "Loading...";
+  // 🔥 LOADING
+  result.innerText = "⏳ Loading transactions...";
 
   try {
     const res = await fetch(
@@ -11,8 +12,27 @@ async function getTx() {
 
     const data = await res.json();
 
-    result.innerText = JSON.stringify(data, null, 2);
+    if (data.status === "1") {
+      let output = "";
+
+      data.result.slice(0,5).forEach(tx => {
+        output += `
+Hash: ${tx.hash}
+From: ${tx.from}
+To: ${tx.to}
+Value: ${tx.value}
+-------------------------
+`;
+      });
+
+      result.innerText = output;
+    } else {
+      // 🔥 ERROR kalau tidak ada data
+      result.innerText = "❌ No transactions found";
+    }
+
   } catch (err) {
-    result.innerText = "Error";
+    // 🔥 ERROR kalau gagal fetch
+    result.innerText = "❌ Failed to fetch data";
   }
 }
